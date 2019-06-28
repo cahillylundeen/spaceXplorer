@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="static/style-index.css">
+        <link rel="stylesheet" href="static/style-random.css">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -30,34 +31,36 @@
             </ul>
           </div>
         </nav>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ past_youtube1 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Past Launch</span>
-                        <p>The last launch was at {{ past_launch_date1 }}</p>
-                        <p>The rocket model was the {{ past_rocket_name1 }}</p>
-                        <p>The launch was at {{ past_site_name_long1 }}</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ past_wiki1 }}">Wiki</a>
+        <div id="container">
+            <div id="launch1" class="row">
+                <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/{{ past_youtube1 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col s12 m6" id="card1">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Past Launch</span>
+                            <p>The last launch was at {{ past_launch_date1 }}</p>
+                            <p>The rocket model was the {{ past_rocket_name1 }}</p>
+                            <p>The launch was at {{ past_site_name_long1 }}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="{{ past_wiki1 }}">Wiki</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ past_youtube2 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Past Launch</span>
-                        <p>The last launch was at {{ past_launch_date2 }}</p>
-                        <p>The rocket model was the {{ past_rocket_name2 }}</p>
-                        <p>The launch was at {{ past_site_name_long2 }}</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ past_wiki2 }}">Wiki</a>
+            <div id="launch2" class="row">
+                <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/{{ past_youtube2 }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="col s12 m6" id="card2">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Past Launch</span>
+                            <p>The last launch was at {{ past_launch_date2 }}</p>
+                            <p>The rocket model was the {{ past_rocket_name2 }}</p>
+                            <p>The launch was at {{ past_site_name_long2 }}</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="{{ past_wiki2 }}">Wiki</a>
+                        </div>
                     </div>
                 </div>
             </div>

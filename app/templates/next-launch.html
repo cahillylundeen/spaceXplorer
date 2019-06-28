@@ -24,20 +24,22 @@
             </ul>
           </div>
         </nav>
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card blue-grey darken-1">
-                    <div class="card-content white-text">
-                        <span class="card-title">Next Launch</span>
-                        <p>Next launch is at {{ launch_date }}</p>
-                        <p>The rocket model is the {{ rocket_name }}</p>
-                        <p>The launch will be at {{ site_name_long }}</p>
-                    </div>
-                    <div class="card-action">
+        <div id="container1">
+            <div class="row">
+                <div id="card1" class="col s12 m6">
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                            <span class="card-title">Next Launch</span>
+                            <p>Next launch is at {{ launch_date }}</p>
+                            <p>The rocket model is the {{ rocket_name }}</p>
+                            <p>The launch will be at {{ site_name_long }}</p>
+                        </div>
+                        <div class="card-action">
+                        </div>
                     </div>
                 </div>
             </div>
+            <a id="countdown" class="waves-effect waves-light btn-large" href='next-countdown'>Countdown</a>
         </div>
-        <a class="waves-effect waves-light btn-large" href='next-countdown'>Countdown</a>
     </body>
 </html>

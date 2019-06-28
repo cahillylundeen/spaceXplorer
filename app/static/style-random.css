@@ -2,3 +2,26 @@ body {
     background-image: url('https://wallpaperaccess.com/full/851806.jpg');
     background-size:cover;
 }
+#container {
+    display:grid;
+    grid-columns: 50% 50%;
+}
+
+#launch1 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#launch2 {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#card1 {
+    width:570px;
+    height:auto;
+}
+#card2 {
+    width:570px;
+    height:auto;
+}
